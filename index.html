@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Predict</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Prediksi Jenis Kelamin Berdasarkan Nama Depan</h1>
+    <main>
+        <div class="container">
+            <label for="first_name">masukkan nama depan</label>
+            <input type="text" name="first_name" id="first_name" placeholder="contoh ilham gumantung gusti"
+                onkeydown="predict(event)">
+            <div id="prediction"></div>
+        </div>
+
+        <div class="container-button">
+            <button type="button" onclick="predict1()">async await fetch</button>
+            <button type="button" onclick="predict2()">async await axios</button>
+            <button type="button" onclick="predict3()">promise fetch</button>
+            <button type="button" onclick="predict4()">promise axios</button>
+            <button type="button" onclick="predict5()">jQuery</button>
+            <button type="button" onclick="predict6()">XMLHttpRequest</button>
+            <button type="button" onclick="predict7()">async await axios v2</button>
+            <button type="button" onclick="predict1()">async await fetch v2</button>
+        </div>
+
+        <div class="container">
+            <blockquote id="code"></blockquote>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
